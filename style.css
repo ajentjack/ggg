@@ -1,0 +1,115 @@
+/* Fonts and Base Styles */
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Jost:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+html,
+body {
+    /* For 1 rem = 10 px */
+    font-size: 62.5%;
+    background-color: #1abf1a1c;
+}
+
+/* Centering Wrapper */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Main Game Area */
+main {
+    width: 75%;
+    height: 75%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+    flex: 1 1 0;
+    background-color: #bf1a1a94;
+    font-size: 2rem;
+    min-height: 7rem;
+}
+
+/* Individual Header Items */
+.item {
+    padding: 1rem;
+    text-align: center;
+}
+
+.item h3 {
+    display: inline;
+    padding: 1rem;
+}
+
+.item .box {
+    background-color: rgb(255, 255, 255);
+    padding: 0.5rem 1.5rem;
+    border-radius: 3px;
+}
+
+/* Game Area */
+#root {
+    height: calc(100% - 7rem);
+    background-color: rgba(255, 0, 0, 0.229);
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+/* Bubbles */
+.bubble {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    font-size: 1.6rem;
+    margin: 0.5rem;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover and Visited Bubble Styles */
+.bubble:hover,
+.bubble:visited {
+    background-color: #bf1a1a94;
+    color: #ffffff;
+}
+
+/* Game Over Message */
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
+    background-color: #bf1a1a94;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+
+/* Media Query */
+@media only screen and (max-width: 50em) {
+    html, body {
+        font-size: 38.5%;
+    }
+}
