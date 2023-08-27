@@ -1,6 +1,3 @@
-Of course! Here's the content formatted in a way that you can directly paste it into your README.md file on GitHub:
-
-```markdown
 # Bubble Game
 
 ![Screenshot](https://github.com/gauravgorade/bubble-game/blob/main/bubble-game_ss.png?raw=true)
@@ -13,9 +10,7 @@ Click on matching bubbles, beat the timer, and score points in this browser-base
 
    ```sh
    git clone https://github.com/gauravgorade/bubble-game.git
-   ```
 
-2. Open the `index.html` file in your web browser to play the game.
 
 ## How to Play
 
